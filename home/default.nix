@@ -4,6 +4,7 @@
     ./vesktop
     ./vscodium
     ./desktop-apps.nix
+    ./fonts.nix
     ./games.nix
     ./git.nix
     ./network.nix
