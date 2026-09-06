@@ -1,10 +1,6 @@
 { pkgs, ... }: {
   # games
-  programs = {
-    steam.enable = true;
-    gamemode.enable = true;
-    lutris.enable = true;
-  };
+  programs.steam.enable = true;
   home.packages = with pkgs; [
     # minecraft
     prismlauncher
