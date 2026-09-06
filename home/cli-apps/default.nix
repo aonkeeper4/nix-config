@@ -1,8 +1,5 @@
 { pkgs, ... }: {
   # nushell
-  environment.shells = [
-    pkgs.nushell
-  ];
   programs = {
     nushell = {
       enable = true;
