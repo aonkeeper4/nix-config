@@ -58,9 +58,9 @@
     tree
     zstd
     gnupg
-    neofetch
+    fastfetch
     yt-dlp
-    qalc
+    libqalculate
     ffmpeg
   ];
 }

@@ -5,7 +5,8 @@
     vlc
     gimp
     krita
-    kdenlive
+    kdePackages.kdenlive
+    audacity
 
     # office
     libreoffice

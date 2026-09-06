@@ -1,13 +1,12 @@
-{ inputs, lib, config, pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   imports = [
     ./cli-apps
     ./vesktop
-    ./vscodium
+    ./vscode
     ./desktop-apps.nix
-    ./fonts.nix
     ./games.nix
     ./git.nix
-    ./network.nix
+    ./fonts.nix
     ./obs.nix
   ];
 

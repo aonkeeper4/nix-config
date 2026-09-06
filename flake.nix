@@ -22,7 +22,6 @@
       laptop-nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          inputs.home-manager.nixosModules.home-manager
           ./nixos/configuration.nix
         ];
       };

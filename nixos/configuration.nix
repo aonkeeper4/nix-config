@@ -2,25 +2,15 @@
   imports = [
     ./hardware-configuration.nix
     ./users.nix
+    ./services.nix
     ./environment.nix
     ./home-manager.nix
+    ./steam.nix
+    ./networking.nix
   ];
 
   # boot
   boot.loader.systemd-boot.enable = true;
-
-  # services
-  networking.hostName = "laptop-nixos";
-  networking.networkmanager.enable = true;
-  services.printing.enable = true;
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-  };
-  services.libinput.enable = true; # touchpad support
-  services.openssh.enable = true;
-  services.desktopManager.plasma6.enable = true;
-  services.displayManager.plasma-login-manager.enable = true;
 
   # nix
   nix = {
