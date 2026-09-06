@@ -1,0 +1,10 @@
+{
+  "workbench.colorTheme": "Tokyo Night",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nil",
+}
