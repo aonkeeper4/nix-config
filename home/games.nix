@@ -1,6 +1,11 @@
 { pkgs, ... }: {
   # games
-  programs.steam.enable = true;
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
+  };
   home.packages = with pkgs; [
     # minecraft
     prismlauncher

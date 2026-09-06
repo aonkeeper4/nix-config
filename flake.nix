@@ -1,5 +1,5 @@
 {
-  description = "aonkeeper4's nix config";
+  description = "aonkeeper4's nixos config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
@@ -22,6 +22,7 @@
       laptop-nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
+          inputs.home-manager.nixosModules.home-manager
           ./nixos/configuration.nix
         ];
       };
