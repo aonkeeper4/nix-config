@@ -3,7 +3,7 @@
     ./hardware-configuration.nix
     ./users.nix
     ./services.nix
-    ./environment.nix
+    ./terminal.nix
     ./home-manager.nix
     ./steam.nix
     ./networking.nix
