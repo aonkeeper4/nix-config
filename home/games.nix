@@ -6,25 +6,21 @@
     lutris.enable = true;
   };
   home.packages = with pkgs; [
-    mumble
-    olympus
+    # minecraft
     prismlauncher
-    protonup-rs
-  ];
 
-  # celeste modding
-  home.packages = with pkgs; [
+    # celeste modding
+    olympus
     avalonia-ilspy
-
     dotnet-sdk_10
     dotnet-runtime_8
     dotnet-runtime_10
     mono
-  ];
-  environment.sessionVariables = {
-    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = 1;
-  };
 
-  # opus magnum modding
-  # todo: it would be really awesome if we could put quintessential on nixpkgs at some point
+    # opus magnum modding
+    # todo: it would be really awesome if we could put quintessential on nixpkgs at some point
+
+    # proton
+    protonup-rs
+  ];
 }
