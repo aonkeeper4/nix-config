@@ -122,11 +122,11 @@ body {
     --red-4: hsl(349, 69%, 60%);
     --red-5: hsl(349, 59%, 54%);
 
-    --green-1: hsl(89, 56%, 67%);
-    --green-2: hsl(89, 51%, 61%);
-    --green-3: hsl(89, 46%, 56%);
-    --green-4: hsl(89, 41%, 51%);
-    --green-5: hsl(89, 36%, 46%);
+    --green-1: hsl(151, 66%, 70%);
+    --green-2: hsl(151, 62%, 65%);
+    --green-3: hsl(151, 58%, 60%);
+    --green-4: hsl(151, 54%, 55%);
+    --green-5: hsl(151, 50%, 50%);
 
     --blue-1: hsl(221, 99%, 78%);
     --blue-2: hsl(221, 89%, 72%);
@@ -134,17 +134,17 @@ body {
     --blue-4: hsl(221, 69%, 60%);
     --blue-5: hsl(221, 59%, 54%);
 
-    --yellow-1: hsl(36, 71%, 72%);
-    --yellow-2: hsl(36, 66%, 64%);
-    --yellow-3: hsl(36, 61%, 59%);
-    --yellow-4: hsl(36, 56%, 54%);
-    --yellow-5: hsl(36, 51%, 49%);
+    --yellow-1: hsl(35, 80%, 78%);
+    --yellow-2: hsl(35, 75%, 72%);
+    --yellow-3: hsl(35, 70%, 66%);
+    --yellow-4: hsl(35, 65%, 60%);
+    --yellow-5: hsl(35, 60%, 54%);
 
-    --purple-1: hsl(261, 95%, 85%);
-    --purple-2: hsl(261, 85%, 79%);
-    --purple-3: hsl(261, 75%, 73%);
-    --purple-4: hsl(261, 65%, 67%);
-    --purple-5: hsl(261, 55%, 61%);
+    --purple-1: hsl(271, 95%, 85%);
+    --purple-2: hsl(271, 85%, 79%);
+    --purple-3: hsl(271, 75%, 73%);
+    --purple-4: hsl(271, 65%, 67%);
+    --purple-5: hsl(271, 55%, 61%);
 }
 
 .divider__908e2:not(.isUnread__908e2) /* dividers that aren't the unread messages marker */ {
