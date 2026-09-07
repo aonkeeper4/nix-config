@@ -95,10 +95,12 @@ body {
     --accent-4: var(--blue-4); /* accent buttons when hovered */
     --accent-5: var(--blue-5); /* accent buttons when clicked */
     --accent-new: var(--red-2); /* stuff that's normally red like mute/deafen buttons */
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--yellow-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--yellow-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
+    --mention-color: var(--yellow-2);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--mention-color), transparent 90%) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--mention-color), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
+    --reply-color: var(--accent-2);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--reply-color), transparent 90%) 40%, transparent); /* background of messages that reply to you */
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--reply-color), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
 
     /* status indicator colors */
     --online: var(--green-2); /* change to #43a25a for default */
@@ -145,6 +147,13 @@ body {
     --purple-5: hsl(261, 55%, 61%);
 }
 
-.divider__908e2:not(.isUnread__908e2) {
+.divider__908e2:not(.isUnread__908e2) /* dividers that aren't the unread messages marker */ {
     border-color: var(--bg-2);
+}
+
+.mentioned__5126c:before /* mention message left edge */ {
+    background-color: var(--mention-color) !important;
+}
+.replying__5126c:before /* reply message left edge */ {
+    background-color: var(--reply-color) !important;
 }
