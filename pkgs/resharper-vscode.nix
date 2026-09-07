@@ -1,15 +1,18 @@
 # resharper for vscode
+# installing the extension normally hangs on startup so we install it via the .vsix, which requires a custom package
 { pkgs, fetchurl, ... }:
 pkgs.vscode-utils.buildVscodeExtension (finalAttrs: {
   pname = "resharper-vscode";
-  inherit (finalAttrs.src) version;
+  version = "1.0";
 
   vscodeExtPublisher = "JetBrains";
   vscodeExtName = "resharper-code";
   vscodeExtUniqueId = "${finalAttrs.vscodeExtPublisher}.${finalAttrs.vscodeExtName}";
 
   src = fetchurl {
+    name = "resharper-vscode.vsix";
     url = "https://download.jetbrains.com/product?code=VSCRS&latest&distribution=linuxX64";
+    sha256 = "sha256-MeJ4yET8XcZkIddoxFvtni5oT6rvCzMk7LnofML1yzM=";
   };
 
   passthru = {
@@ -17,7 +20,7 @@ pkgs.vscode-utils.buildVscodeExtension (finalAttrs: {
   };
 
   meta = {
-    description = "C#, Razor, and Blazor support from JetBrains: debugger, code analysis, code completion, unit testing, navigation, find usages, refactorings, code formatting, NuGet package management, and more";
+    description = "ReSharper for Visual Studio Code";
     downloadPage = "https://marketplace.visualstudio.com/items?itemName=JetBrains.resharper-code";
     homepage = "https://jetbrains.com";
   };
