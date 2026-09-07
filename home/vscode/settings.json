@@ -3,7 +3,7 @@
   "editor.formatOnSave": true,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
   "git.autofetch": true,
-  "git.confirmSync": false,
+  "git.confirmSync": true,
   "security.workspace.trust.untrustedFiles": "open",
   "nix.enableLanguageServer": true,
   "nix.serverPath": "nil",
