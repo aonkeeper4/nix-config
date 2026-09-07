@@ -1,4 +1,4 @@
-{ ... }: {
+{ lib, ... }: {
   # services
   services.printing.enable = true;
   services.pipewire = {
@@ -9,4 +9,5 @@
   services.openssh.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.displayManager.plasma-login-manager.enable = true;
+  systemd.services.power-profiles-daemon.enable = lib.mkForce false;
 }
