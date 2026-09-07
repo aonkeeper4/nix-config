@@ -5,6 +5,7 @@
     vlc
     gimp
     krita
+    aseprite
     kdePackages.kdenlive
     audacity
 

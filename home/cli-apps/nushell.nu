@@ -7,7 +7,6 @@ def l   [...args] { ls     ...(if $args == [] {["."]} else {$args}) | sort-by ty
 
 # carapace completions https://www.nushell.sh/cookbook/external_completers.html#carapace-completer
 # + fix https://www.nushell.sh/cookbook/external_completers.html#err-unknown-shorthand-flag-using-carapace
-# enable the package and integration bellow
 let carapace_completer = {|spans: list<string>|
   carapace $spans.0 nushell ...$spans
     | from json
@@ -29,7 +28,7 @@ $env.config = {
       # set to false to prevent nushell looking into $env.PATH to find more suggestions
       enable: true
       # set to lower can improve completion performance at the cost of omitting some options
-      max_results: 100
+      max_results: 50
       completer: $carapace_completer
     }
   }
@@ -37,12 +36,11 @@ $env.config = {
 
 $env.PATH = ($env.PATH |
   split row (char esep) |
-  prepend /home/myuser/.apps |
+  prepend /home/aonkeeper4/.apps |
   append /usr/bin/env
 )
 
 # enable starship
 $env.STARSHIP_SHELL = "nu"
-
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
