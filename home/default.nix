@@ -3,6 +3,7 @@
     ./cli-apps
     ./vesktop
     ./vscode
+    ./rider
     ./desktop-apps.nix
     ./games.nix
     ./git.nix

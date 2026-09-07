@@ -3,9 +3,8 @@
   "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
   "git.autofetch": true,
   "git.confirmSync": false,
-  "git.enableSmartCommit": true,
+  "git.enableSmartCommit": false,
   "security.workspace.trust.untrustedFiles": "open",
   "nix.enableLanguageServer": true,
   "nix.serverPath": "nil",
-  "resharper.region.region": "Europe",
 }

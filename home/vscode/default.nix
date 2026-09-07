@@ -13,13 +13,13 @@
       sumneko.lua
       jnoortheen.nix-ide
       thenuprojectcontributors.vscode-nushell-lang
-      pkgs.resharper-vscode
 
       # misc
       naumovs.color-highlight
       esbenp.prettier-vscode
     ];
   };
+  # apparently home-manager can manage these in the `programs.vscode` definition itself? but it doesn't seem to work
   home.file.".config/Code/User/settings.json".source = ./settings.json;
   home.file.".config/Code/User/keybindings.json".source = ./keybindings.json;
 }
