@@ -8,4 +8,5 @@
   "security.workspace.trust.untrustedFiles": "open",
   "nix.enableLanguageServer": true,
   "nix.serverPath": "nil",
+  "resharper.region.region": "Europe",
 }

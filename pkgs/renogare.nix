@@ -1,5 +1,6 @@
 # renogare font
-{ pkgs, fetchurl }: pkgs.stdenv.mkDerivation {
+{ pkgs, fetchurl, ... }:
+pkgs.stdenv.mkDerivation {
   pname = "renogare";
   version = "1.0";
 
