@@ -5,6 +5,7 @@
       "com.plsft.tokyonight"
       "com.mallowigi.colorHighlighter"
       "com.intellij.resharper.HeapAllocationsViewer"
+      "com.cppcxy.Intellij-SumnekoLua"
     ])
   ];
 }
