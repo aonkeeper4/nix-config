@@ -385,7 +385,7 @@
             "enabled": false
         },
         "ReplyTimestamp": {
-            "enabled": true
+            "enabled": false
         },
         "RevealAllSpoilers": {
             "enabled": false

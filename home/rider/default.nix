@@ -1,12 +1,10 @@
 { inputs, pkgs, ... }: {
   # rider
-  home.packages =
-    with pkgs;
-    with inputs.nix-jetbrains-plugins.lib;
-    [
-      (buildIdeWithPlugins pkgs "rider" [
-        "color.scheme.Tokyo Night"
-        "com.mallowigi.colorHighlighter"
-      ])
-    ];
+  home.packages = with inputs.nix-jetbrains-plugins.lib; [
+    (buildIdeWithPlugins pkgs "rider" [
+      "com.plsft.tokyonight"
+      "com.mallowigi.colorHighlighter"
+      "com.intellij.resharper.HeapAllocationsViewer"
+    ])
+  ];
 }
