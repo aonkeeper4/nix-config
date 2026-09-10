@@ -1,5 +1,6 @@
 { inputs, ... }: {
   imports = [
+    ./plasma
     ./hardware-configuration.nix
     ./users.nix
     ./services.nix

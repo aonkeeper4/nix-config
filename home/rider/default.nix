@@ -8,4 +8,6 @@
       "com.cppcxy.Intellij-SumnekoLua"
     ])
   ];
+
+  # todo: config
 }
