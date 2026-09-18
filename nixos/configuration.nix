@@ -8,6 +8,7 @@
     ./home-manager.nix
     ./steam.nix
     ./networking.nix
+    ./secrets.nix
   ];
 
   # boot

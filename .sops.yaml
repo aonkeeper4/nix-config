@@ -1,0 +1,7 @@
+keys:
+  - &host_aonkeeper4 age18jhkak820t5txncjvl3hw78fyhes602ykt2273d87f9rrexleqfqrf7w7x
+creation_rules:
+  - path_regex: secrets.yaml$
+    key_groups:
+      - age:
+          - *host_aonkeeper4

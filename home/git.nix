@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ config, pkgs, ... }: {
   # git
   home.packages = with pkgs; [
     git
@@ -10,6 +10,7 @@
       user = {
         name = "aonkeeper4";
         email = "aonkeeper4@gmail.com";
+        password = config.sops.secrets.github_token.path;
       };
 
       init.defaultBranch = "main";

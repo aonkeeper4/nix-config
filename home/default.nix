@@ -9,6 +9,7 @@
     ./git.nix
     ./fonts.nix
     ./obs.nix
+    ./secrets
   ];
 
   # nix stuff

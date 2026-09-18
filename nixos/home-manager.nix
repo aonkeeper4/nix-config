@@ -4,9 +4,13 @@
   ];
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs; };
     users = {
       aonkeeper4 = import ../home;
     };
+
+    extraSpecialArgs = { inherit inputs; };
+    sharedModules = [
+      inputs.sops-nix.homeManagerModules.sops
+    ];
   };
 }

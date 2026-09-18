@@ -11,8 +11,10 @@
       };
     };
 
-    carapace.enable = true;
-    carapace.enableNushellIntegration = true;
+    carapace = {
+      enable = true;
+      enableNushellIntegration = true;
+    };
   };
 
   # starship
@@ -62,5 +64,7 @@
     yt-dlp
     libqalculate
     ffmpeg
+    wine
+    winetricks
   ];
 }
