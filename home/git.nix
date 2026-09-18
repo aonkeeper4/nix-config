@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
   # git
   home.packages = with pkgs; [
     git
@@ -10,7 +10,6 @@
       user = {
         name = "aonkeeper4";
         email = "aonkeeper4@gmail.com";
-        password = config.sops.secrets.github_token.path;
       };
 
       init.defaultBranch = "main";
@@ -18,6 +17,12 @@
       push.autoSetupRemote = true;
 
       color.ui = "auto";
+    };
+  };
+  programs.gh = {
+    enable = true;
+    gitCredentialHelper = {
+      enable = true;
     };
   };
 }
