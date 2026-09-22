@@ -10,6 +10,7 @@
     ./fonts.nix
     ./obs.nix
     ./secrets
+    ./compatibility.nix
   ];
 
   # nix stuff

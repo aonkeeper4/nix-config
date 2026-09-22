@@ -4,6 +4,7 @@
     git
     lazygit
   ];
+
   programs.git = {
     enable = true;
     settings = {
@@ -12,13 +13,14 @@
         email = "aonkeeper4@gmail.com";
       };
 
-      init.defaultBranch = "main";
-      pull.rebase = true;
+      init.defaultBranch = "dev";
+      pull.ff = true;
       push.autoSetupRemote = true;
 
       color.ui = "auto";
     };
   };
+
   programs.gh = {
     enable = true;
     gitCredentialHelper = {

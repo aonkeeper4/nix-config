@@ -4,11 +4,6 @@
     nushell = {
       enable = true;
       configFile.source = ./nushell.nu;
-      shellAliases = {
-        vi = "hx";
-        vim = "hx";
-        nano = "hx";
-      };
     };
 
     carapace = {
