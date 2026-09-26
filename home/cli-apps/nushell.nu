@@ -1,9 +1,5 @@
-# common ls aliases and sort them by type and then name
-# inspired by https://github.com/nushell/nushell/issues/7190
-def lla [...args] { ls -la ...(if $args == [] {["."]} else {$args}) | sort-by type name -i }
-def la  [...args] { ls -a  ...(if $args == [] {["."]} else {$args}) | sort-by type name -i }
-def ll  [...args] { ls -l  ...(if $args == [] {["."]} else {$args}) | sort-by type name -i }
-def l   [...args] { ls     ...(if $args == [] {["."]} else {$args}) | sort-by type name -i }
+# aliases
+alias recrank = sudo nixos-rebuild switch --flake /home/aonkeeper4/nix-config
 
 # carapace completions https://www.nushell.sh/cookbook/external_completers.html#carapace-completer
 # + fix https://www.nushell.sh/cookbook/external_completers.html#err-unknown-shorthand-flag-using-carapace

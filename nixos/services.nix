@@ -7,7 +7,7 @@
 
   # x11
   services.xserver.enable = true;
-  services.xserver.layout = "gb";
+  services.xserver.xkb.layout = "gb";
 
   # misc
   services.printing.enable = true;

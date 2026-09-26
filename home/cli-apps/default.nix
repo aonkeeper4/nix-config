@@ -48,6 +48,7 @@
     nixfmt
     python3
     rustup
+    julia-bin
 
     # misc
     file

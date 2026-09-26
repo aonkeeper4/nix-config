@@ -9,6 +9,7 @@
     ./steam.nix
     ./networking.nix
     ./secrets.nix
+    ./locale.nix
   ];
 
   # boot
