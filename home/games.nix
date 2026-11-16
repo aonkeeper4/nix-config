@@ -7,10 +7,13 @@
     # celeste modding
     olympus
     avalonia-ilspy
-    dotnet-sdk_8
-    dotnet-runtime_8
-    dotnet-sdk_10
-    dotnet-runtime_10
+    (
+      with dotnetCorePackages;
+      combinePackages [
+        sdk_8_0
+        sdk_10_0
+      ]
+    )
     mono
 
     # opus magnum modding

@@ -36,10 +36,6 @@ $env.PATH = ($env.PATH |
   append /usr/bin/env
 )
 
-# dotnet
-# todo: do this properly
-$env.DOTNET_ROOT = "/nix/store/9csld8pd0l9cdymws875d3k2a9jvm4dl-dotnet-sdk-10.0.400/share/dotnet"
-
 # enable starship
 $env.STARSHIP_SHELL = "nu"
 mkdir ($nu.data-dir | path join "vendor/autoload")
