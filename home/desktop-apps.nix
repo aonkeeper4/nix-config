@@ -14,5 +14,8 @@
 
     # browser
     firefox
+
+    # misc
+    musescore
   ];
 }

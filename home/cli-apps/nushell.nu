@@ -12,7 +12,6 @@ let carapace_completer = {|spans: list<string>|
 # eg. tailscale
 # https://carapace-sh.github.io/carapace-bin/setup.html#nushell
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense'
-
 $env.config = {
   show_banner: false,
   completions: {
@@ -30,11 +29,16 @@ $env.config = {
   }
 }
 
+# path
 $env.PATH = ($env.PATH |
   split row (char esep) |
   prepend /home/aonkeeper4/.apps |
   append /usr/bin/env
 )
+
+# dotnet
+# todo: do this properly
+$env.DOTNET_ROOT = "/nix/store/9csld8pd0l9cdymws875d3k2a9jvm4dl-dotnet-sdk-10.0.400/share/dotnet"
 
 # enable starship
 $env.STARSHIP_SHELL = "nu"

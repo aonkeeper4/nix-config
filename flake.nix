@@ -11,6 +11,8 @@
     nix-jetbrains-plugins.url = "github:nix-community/nix-jetbrains-plugins";
 
     sops-nix.url = "github:Mic92/sops-nix";
+
+    mod-om.url = "github:fenhl/mod-om";
   };
 
   outputs =
